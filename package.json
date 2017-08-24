@@ -1,0 +1,15 @@
+{
+  "version": "0.0.0",
+  "name": "language-marie",
+  "description": "Add syntax highlighting for the MARIE Assembly Language",
+  "homepage": "https://github.com/mathewmariani/language-marie",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mathewmariani/language-marie"
+  },
+  "license": "MIT",
+  "engines": {
+    "atom": ">=0.50.0"
+  },
+  "author": "Mathew Mariani <someone.mariani@gmail.com>"
+}

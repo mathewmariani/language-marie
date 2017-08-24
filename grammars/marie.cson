@@ -1,0 +1,37 @@
+'comment': 'MARIE Syntax v1.0'
+'fileTypes': [
+  'mas'
+]
+'name': 'Marie'
+'patterns': [
+  {
+    'begin': '(^[ \\t]+)?(?=/)'
+    'beginCaptures':
+      '1':
+        'name': 'punctuation.whitespace.comment.leading.marie'
+    'end': '(?!\\G)'
+    'patterns': [
+      {
+        'begin': '/'
+        'beginCaptures':
+          '0':
+            'name': 'punctuation.definition.comment.marie'
+        'end': '(?=\\n)'
+        'name': 'comment.line.slash.marie'
+      }
+    ]
+  }
+  {
+    'match': '\\b(JNS|LOAD|STORE|ADD|SUBT|INPUT|OUTPUT|HALT|SKIPCOND|JUMP|CLEAR|ADDI|JUMPI|LOADI|STOREI|ORG)\\b'
+    'name': 'keyword.marie'
+  }
+  {
+    'match': '\\b(DEC|OCT|HEX)\\b'
+    'name': 'storage.type.squirrel'
+  }
+  {
+    'match': '\\b(([0-9a-fA-F]+)|([0-9]))\\b'
+    'name': 'constant.numeric.marie'
+  }
+]
+'scopeName': 'source.mas'
